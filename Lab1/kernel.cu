@@ -35,7 +35,7 @@ void basicVecAdd( float *A,  float *B, float *C, int n)
     const unsigned int BLOCK_SIZE = 256; 
 
     //INSERT CODE HERE
-	dim3 DimGrid((n-1/BLOCK_SIZE)+1,1,1);
+	dim3 DimGrid(((n-1)/BLOCK_SIZE)+1,1,1);
 	dim3 DimBlock(BLOCK_SIZE,1,1);
 
 	VecAdd<<<DimGrid,DimBlock>>>(n,A,B,C);
