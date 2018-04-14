@@ -1,3 +1,3 @@
 1) We use a total of 4 thread block to process 1000 elements. Each thread block is of size 256
 2) Thread blocks 0, 1, 2 are full, however thread block 3 is not full. Thread block 3 uses 232/256 threads.
-3) 
+3) I would want to modify the basicAdd function so that it would dynamically adjust the block size based off of the size of the vector to make as high of a utilization of the GPU as possible. 
