@@ -1,0 +1,2 @@
+1) Given 32 threads per multiprocessor and 30 multiprocessor we get 960 Threads.
+2) This implementation uses 26 registers, 2048 bytes smem 360 bytes cmem
