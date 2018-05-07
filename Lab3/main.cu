@@ -22,9 +22,9 @@ int main(int argc, char* argv[])
     startTime(&timer);
 
     unsigned int *in_h;
-    uint8_t* bins_h;
+    unsigned int* bins_h;
     unsigned int *in_d;
-    uint8_t* bins_d;
+    unsigned int* bins_d;
     unsigned int num_elements, num_bins;
     cudaError_t cuda_ret;
 
@@ -46,7 +46,7 @@ int main(int argc, char* argv[])
         exit(0);
     }
     initVector(&in_h, num_elements, num_bins);
-    bins_h = (uint8_t*) malloc(num_bins*sizeof(uint8_t));
+    bins_h = (unsigned int*) malloc(num_bins*sizeof(unsigned int));
 
     stopTime(&timer); printf("%f s\n", elapsedTime(timer));
     printf("    Input size = %u\n    Number of bins = %u\n", num_elements,
@@ -59,7 +59,7 @@ int main(int argc, char* argv[])
 
     cuda_ret = cudaMalloc((void**)&in_d, num_elements * sizeof(unsigned int));
     if(cuda_ret != cudaSuccess) FATAL("Unable to allocate device memory");
-    cuda_ret = cudaMalloc((void**)&bins_d, num_bins * sizeof(uint8_t));
+    cuda_ret = cudaMalloc((void**)&bins_d, num_bins * sizeof(unsigned int));
     if(cuda_ret != cudaSuccess) FATAL("Unable to allocate device memory");
 
     cudaDeviceSynchronize();
@@ -74,7 +74,7 @@ int main(int argc, char* argv[])
         cudaMemcpyHostToDevice);
     if(cuda_ret != cudaSuccess) FATAL("Unable to copy memory to the device");
 
-    cuda_ret = cudaMemset(bins_d, 0, num_bins * sizeof(uint8_t));
+    cuda_ret = cudaMemset(bins_d, 0, num_bins * sizeof(unsigned int));
     if(cuda_ret != cudaSuccess) FATAL("Unable to set device memory");
 
     cudaDeviceSynchronize();
@@ -95,7 +95,7 @@ int main(int argc, char* argv[])
     printf("Copying data from device to host..."); fflush(stdout);
     startTime(&timer);
 
-    cuda_ret = cudaMemcpy(bins_h, bins_d, num_bins * sizeof(uint8_t),
+    cuda_ret = cudaMemcpy(bins_h, bins_d, num_bins * sizeof(unsigned int),
         cudaMemcpyDeviceToHost);
 	if(cuda_ret != cudaSuccess) FATAL("Unable to copy memory to host");
 
