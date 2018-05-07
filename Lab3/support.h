@@ -20,7 +20,7 @@ typedef struct {
 extern "C" {
 #endif
 void initVector(unsigned int **vec_h, unsigned int size, unsigned int num_bins);
-void verify(unsigned int* input, uint8_t* bins, unsigned int num_elements, unsigned int num_bins);
+void verify(unsigned int* input, unsigned int* bins, unsigned int num_elements, unsigned int num_bins);
 void startTime(Timer* timer);
 void stopTime(Timer* timer);
 float elapsedTime(Timer timer);
