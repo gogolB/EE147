@@ -1,3 +1,3 @@
-A)
+A)The program had 98.48% utilization on the SMs on the GPU. There were plenty of memory accesses to shared memory and plenty of loads from global memory. The program achieved 3% utilization of shared memory. It also had several atomic operation which was all expected. What was surprising was that there were no global stores.
 
-B)
+B)The limitation on n, the number of bins, is that the number of bins must be able to fit within shared memory. To get around this we can have different SMPs work on different parts of the histogram and process it that way. The limitation on m, the number of elements, is that m + n must be less than the amount of global memory. However in order to get around this we can load only parts of the data set at a time and keep the histogram in device memory. Only once we have processed all the data do we copy back the device histogram.
