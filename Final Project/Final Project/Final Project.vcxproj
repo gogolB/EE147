@@ -95,17 +95,22 @@ copy "$(CudaToolkitBinDir)\cudart*.dll" "$(OutDir)"</Command>
     </CudaCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <CudaCompile Include="GPU_Setup.cu" />
     <CudaCompile Include="kernel.cu" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Controls.h" />
+    <ClInclude Include="CPU_Particle.h" />
+    <ClInclude Include="GPU_Setup.h" />
     <ClInclude Include="Helper.h" />
     <ClInclude Include="Texture.h" />
     <ClInclude Include="Window_Control.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Controls.cpp" />
+    <ClCompile Include="CPU_Particle.cpp" />
     <ClCompile Include="Helper.cpp" />
+    <ClCompile Include="Main.cpp" />
     <ClCompile Include="Texture.cpp" />
     <ClCompile Include="Window_Control.cpp" />
   </ItemGroup>
