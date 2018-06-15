@@ -1,7 +1,403 @@
-﻿  Compiling CUDA source file kernel.cu...
+﻿  Compiling CUDA source file advection\advection.cu...
+  Compiling CUDA source file diffusion\diffusion.cu...
+  Compiling CUDA source file GPU_Simple_Particle.cu...
+  Compiling CUDA source file force\force.cu...
+  Compiling CUDA source file GPU_Particle.cu...
+  Compiling CUDA source file GPU_Setup.cu...
+  Compiling CUDA source file kernel.cu...
+  Compiling CUDA source file projection\project.cu...
+  Compiling CUDA source file points\points.cu...
+  Compiling CUDA source file util.cu...
   
-  C:\Users\acx23\Classwork\EE147\Final Project\Final Project>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.1\bin\nvcc.exe" -gencode=arch=compute_30,code=\"sm_30,compute_30\" --use-local-env --cl-version 2015 -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64" -x cu  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.1\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.1\include"  -G   --keep-dir x64\Debug -maxrregcount=0  --machine 64 --compile -cudart static  -g   -DWIN32 -DWIN64 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /FS /Zi /RTC1 /MDd " -o x64\Debug\kernel.cu.obj "C:\Users\acx23\Classwork\EE147\Final Project\Final Project\kernel.cu" 
+  C:\Users\acx23\Classwork\EE147\Final Project\Final Project>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.1\bin\nvcc.exe" -gencode=arch=compute_30,code=\"sm_30,compute_30\" --use-local-env --cl-version 2015 -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64" -x cu  -I"C:\Users\acx23\Classwork\EE147\Final Project\deps\glew-2.1.0\include" -I"C:\Users\acx23\Classwork\EE147\Final Project\deps\glfw-3.2.1\include" -I"C:\Users\acx23\Classwork\EE147\Final Project\deps\glm" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.1\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.1\include"  -G   --keep-dir x64\Debug -maxrregcount=0  --machine 64 --compile -cudart static -arch=compute_30 -g   -DWIN32 -DWIN64 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /FS /Zi /RTC1 /MDd " -o x64\Debug\advection.cu.obj "C:\Users\acx23\Classwork\EE147\Final Project\Final Project\advection\advection.cu" 
+  
+  
+  C:\Users\acx23\Classwork\EE147\Final Project\Final Project>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.1\bin\nvcc.exe" -gencode=arch=compute_30,code=\"sm_30,compute_30\" --use-local-env --cl-version 2015 -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64" -x cu  -I"C:\Users\acx23\Classwork\EE147\Final Project\deps\glew-2.1.0\include" -I"C:\Users\acx23\Classwork\EE147\Final Project\deps\glfw-3.2.1\include" -I"C:\Users\acx23\Classwork\EE147\Final Project\deps\glm" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.1\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.1\include"  -G   --keep-dir x64\Debug -maxrregcount=0  --machine 64 --compile -cudart static -arch=compute_30 -g   -DWIN32 -DWIN64 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /FS /Zi /RTC1 /MDd " -o x64\Debug\force.cu.obj "C:\Users\acx23\Classwork\EE147\Final Project\Final Project\force\force.cu" 
+  C:\Users\acx23\Classwork\EE147\Final Project\Final Project>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.1\bin\nvcc.exe" -gencode=arch=compute_30,code=\"sm_30,compute_30\" --use-local-env --cl-version 2015 -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64" -x cu  -I"C:\Users\acx23\Classwork\EE147\Final Project\deps\glew-2.1.0\include" -I"C:\Users\acx23\Classwork\EE147\Final Project\deps\glfw-3.2.1\include" -I"C:\Users\acx23\Classwork\EE147\Final Project\deps\glm" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.1\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.1\include"  -G   --keep-dir x64\Debug -maxrregcount=0  --machine 64 --compile -cudart static -arch=compute_30 -g   -DWIN32 -DWIN64 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /FS /Zi /RTC1 /MDd " -o x64\Debug\GPU_Setup.cu.obj "C:\Users\acx23\Classwork\EE147\Final Project\Final Project\GPU_Setup.cu" 
+  
+  
+  C:\Users\acx23\Classwork\EE147\Final Project\Final Project>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.1\bin\nvcc.exe" -gencode=arch=compute_30,code=\"sm_30,compute_30\" --use-local-env --cl-version 2015 -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64" -x cu  -I"C:\Users\acx23\Classwork\EE147\Final Project\deps\glew-2.1.0\include" -I"C:\Users\acx23\Classwork\EE147\Final Project\deps\glfw-3.2.1\include" -I"C:\Users\acx23\Classwork\EE147\Final Project\deps\glm" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.1\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.1\include"  -G   --keep-dir x64\Debug -maxrregcount=0  --machine 64 --compile -cudart static -arch=compute_30 -g   -DWIN32 -DWIN64 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /FS /Zi /RTC1 /MDd " -o x64\Debug\project.cu.obj "C:\Users\acx23\Classwork\EE147\Final Project\Final Project\projection\project.cu" 
+  C:\Users\acx23\Classwork\EE147\Final Project\Final Project>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.1\bin\nvcc.exe" -gencode=arch=compute_30,code=\"sm_30,compute_30\" --use-local-env --cl-version 2015 -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64" -x cu  -I"C:\Users\acx23\Classwork\EE147\Final Project\deps\glew-2.1.0\include" -I"C:\Users\acx23\Classwork\EE147\Final Project\deps\glfw-3.2.1\include" -I"C:\Users\acx23\Classwork\EE147\Final Project\deps\glm" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.1\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.1\include"  -G   --keep-dir x64\Debug -maxrregcount=0  --machine 64 --compile -cudart static -arch=compute_30 -g   -DWIN32 -DWIN64 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /FS /Zi /RTC1 /MDd " -o x64\Debug\GPU_Particle.cu.obj "C:\Users\acx23\Classwork\EE147\Final Project\Final Project\GPU_Particle.cu" 
+  
+  C:\Users\acx23\Classwork\EE147\Final Project\Final Project>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.1\bin\nvcc.exe" -gencode=arch=compute_30,code=\"sm_30,compute_30\" --use-local-env --cl-version 2015 -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64" -x cu  -I"C:\Users\acx23\Classwork\EE147\Final Project\deps\glew-2.1.0\include" -I"C:\Users\acx23\Classwork\EE147\Final Project\deps\glfw-3.2.1\include" -I"C:\Users\acx23\Classwork\EE147\Final Project\deps\glm" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.1\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.1\include"  -G   --keep-dir x64\Debug -maxrregcount=0  --machine 64 --compile -cudart static -arch=compute_30 -g   -DWIN32 -DWIN64 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /FS /Zi /RTC1 /MDd " -o x64\Debug\kernel.cu.obj "C:\Users\acx23\Classwork\EE147\Final Project\Final Project\kernel.cu" 
+  
+  C:\Users\acx23\Classwork\EE147\Final Project\Final Project>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.1\bin\nvcc.exe" -gencode=arch=compute_30,code=\"sm_30,compute_30\" --use-local-env --cl-version 2015 -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64" -x cu  -I"C:\Users\acx23\Classwork\EE147\Final Project\deps\glew-2.1.0\include" -I"C:\Users\acx23\Classwork\EE147\Final Project\deps\glfw-3.2.1\include" -I"C:\Users\acx23\Classwork\EE147\Final Project\deps\glm" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.1\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.1\include"  -G   --keep-dir x64\Debug -maxrregcount=0  --machine 64 --compile -cudart static -arch=compute_30 -g   -DWIN32 -DWIN64 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /FS /Zi /RTC1 /MDd " -o x64\Debug\GPU_Simple_Particle.cu.obj "C:\Users\acx23\Classwork\EE147\Final Project\Final Project\GPU_Simple_Particle.cu" 
+  
+  C:\Users\acx23\Classwork\EE147\Final Project\Final Project>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.1\bin\nvcc.exe" -gencode=arch=compute_30,code=\"sm_30,compute_30\" --use-local-env --cl-version 2015 -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64" -x cu  -I"C:\Users\acx23\Classwork\EE147\Final Project\deps\glew-2.1.0\include" -I"C:\Users\acx23\Classwork\EE147\Final Project\deps\glfw-3.2.1\include" -I"C:\Users\acx23\Classwork\EE147\Final Project\deps\glm" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.1\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.1\include"  -G   --keep-dir x64\Debug -maxrregcount=0  --machine 64 --compile -cudart static -arch=compute_30 -g   -DWIN32 -DWIN64 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /FS /Zi /RTC1 /MDd " -o x64\Debug\points.cu.obj "C:\Users\acx23\Classwork\EE147\Final Project\Final Project\points\points.cu" 
+  
+  C:\Users\acx23\Classwork\EE147\Final Project\Final Project>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.1\bin\nvcc.exe" -gencode=arch=compute_30,code=\"sm_30,compute_30\" --use-local-env --cl-version 2015 -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64" -x cu  -I"C:\Users\acx23\Classwork\EE147\Final Project\deps\glew-2.1.0\include" -I"C:\Users\acx23\Classwork\EE147\Final Project\deps\glfw-3.2.1\include" -I"C:\Users\acx23\Classwork\EE147\Final Project\deps\glm" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.1\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.1\include"  -G   --keep-dir x64\Debug -maxrregcount=0  --machine 64 --compile -cudart static -arch=compute_30 -g   -DWIN32 -DWIN64 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /FS /Zi /RTC1 /MDd " -o x64\Debug\diffusion.cu.obj "C:\Users\acx23\Classwork\EE147\Final Project\Final Project\diffusion\diffusion.cu" 
+  
+  C:\Users\acx23\Classwork\EE147\Final Project\Final Project>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.1\bin\nvcc.exe" -gencode=arch=compute_30,code=\"sm_30,compute_30\" --use-local-env --cl-version 2015 -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64" -x cu  -I"C:\Users\acx23\Classwork\EE147\Final Project\deps\glew-2.1.0\include" -I"C:\Users\acx23\Classwork\EE147\Final Project\deps\glfw-3.2.1\include" -I"C:\Users\acx23\Classwork\EE147\Final Project\deps\glm" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.1\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.1\include"  -G   --keep-dir x64\Debug -maxrregcount=0  --machine 64 --compile -cudart static -arch=compute_30 -g   -DWIN32 -DWIN64 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /FS /Zi /RTC1 /MDd " -o x64\Debug\util.cu.obj "C:\Users\acx23\Classwork\EE147\Final Project\Final Project\util.cu" 
+C:/Users/acx23/Classwork/EE147/Final Project/Final Project/points/points.cu(32): warning : variable "z_d" was declared but never referenced
+C:/Users/acx23/Classwork/EE147/Final Project/Final Project/points/points.cu(36): warning : variable "c2" was set but never used
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_vec2.hpp(89): warning : __device__ annotation on a defaulted function("vec") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_vec2.hpp(89): warning : __host__ annotation on a defaulted function("vec") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_vec2.hpp(90): warning : __device__ annotation on a defaulted function("vec") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_vec2.hpp(90): warning : __host__ annotation on a defaulted function("vec") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_vec2.hpp(131): warning : __device__ annotation on a defaulted function("operator=") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_vec2.hpp(131): warning : __host__ annotation on a defaulted function("operator=") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_vec2.hpp(89): warning : __device__ annotation on a defaulted function("vec") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_vec2.hpp(89): warning : __host__ annotation on a defaulted function("vec") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_vec2.hpp(90): warning : __device__ annotation on a defaulted function("vec") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_vec2.hpp(90): warning : __host__ annotation on a defaulted function("vec") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_vec2.hpp(131): warning : __device__ annotation on a defaulted function("operator=") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_vec2.hpp(131): warning : __host__ annotation on a defaulted function("operator=") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_vec3.hpp(89): warning : __device__ annotation on a defaulted function("vec") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_vec3.hpp(89): warning : __host__ annotation on a defaulted function("vec") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_vec3.hpp(90): warning : __device__ annotation on a defaulted function("vec") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_vec3.hpp(90): warning : __host__ annotation on a defaulted function("vec") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_vec3.hpp(152): warning : __device__ annotation on a defaulted function("operator=") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_vec3.hpp(152): warning : __host__ annotation on a defaulted function("operator=") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_vec3.hpp(89): warning : __device__ annotation on a defaulted function("vec") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_vec3.hpp(89): warning : __host__ annotation on a defaulted function("vec") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_vec3.hpp(90): warning : __device__ annotation on a defaulted function("vec") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_vec3.hpp(90): warning : __host__ annotation on a defaulted function("vec") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_vec3.hpp(152): warning : __device__ annotation on a defaulted function("operator=") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_vec3.hpp(152): warning : __host__ annotation on a defaulted function("operator=") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_vec4.hpp(92): warning : __device__ annotation on a defaulted function("vec") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_vec4.hpp(92): warning : __host__ annotation on a defaulted function("vec") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_vec4.hpp(93): warning : __device__ annotation on a defaulted function("vec") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_vec4.hpp(92): warning : __device__ annotation on a defaulted function("vec") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_vec4.hpp(92): warning : __host__ annotation on a defaulted function("vec") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_vec4.hpp(93): warning : __host__ annotation on a defaulted function("vec") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_vec4.hpp(93): warning : __device__ annotation on a defaulted function("vec") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_vec4.hpp(93): warning : __host__ annotation on a defaulted function("vec") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_vec4.hpp(197): warning : __device__ annotation on a defaulted function("operator=") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_vec4.hpp(197): warning : __device__ annotation on a defaulted function("operator=") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_vec4.hpp(197): warning : __host__ annotation on a defaulted function("operator=") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_vec4.hpp(197): warning : __host__ annotation on a defaulted function("operator=") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat2x2.hpp(37): warning : __device__ annotation on a defaulted function("mat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat2x2.hpp(37): warning : __host__ annotation on a defaulted function("mat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat2x2.hpp(38): warning : __device__ annotation on a defaulted function("mat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat2x2.hpp(38): warning : __host__ annotation on a defaulted function("mat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat2x2.hpp(78): warning : __device__ annotation on a defaulted function("operator=") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat2x2.hpp(78): warning : __host__ annotation on a defaulted function("operator=") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat2x2.hpp(37): warning : __device__ annotation on a defaulted function("mat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat2x2.hpp(37): warning : __host__ annotation on a defaulted function("mat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat2x3.hpp(38): warning : __device__ annotation on a defaulted function("mat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat2x3.hpp(38): warning : __host__ annotation on a defaulted function("mat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat2x3.hpp(39): warning : __device__ annotation on a defaulted function("mat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat2x3.hpp(39): warning : __host__ annotation on a defaulted function("mat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat2x2.hpp(38): warning : __device__ annotation on a defaulted function("mat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat2x3.hpp(79): warning : __device__ annotation on a defaulted function("operator=") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat2x3.hpp(79): warning : __host__ annotation on a defaulted function("operator=") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat2x2.hpp(38): warning : __host__ annotation on a defaulted function("mat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat2x2.hpp(78): warning : __device__ annotation on a defaulted function("operator=") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat2x4.hpp(38): warning : __device__ annotation on a defaulted function("mat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat2x2.hpp(78): warning : __host__ annotation on a defaulted function("operator=") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat2x4.hpp(38): warning : __host__ annotation on a defaulted function("mat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat2x4.hpp(39): warning : __device__ annotation on a defaulted function("mat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat2x3.hpp(38): warning : __device__ annotation on a defaulted function("mat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat2x4.hpp(39): warning : __host__ annotation on a defaulted function("mat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat2x3.hpp(38): warning : __host__ annotation on a defaulted function("mat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat2x3.hpp(39): warning : __device__ annotation on a defaulted function("mat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat2x3.hpp(39): warning : __host__ annotation on a defaulted function("mat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat2x3.hpp(79): warning : __device__ annotation on a defaulted function("operator=") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat2x3.hpp(79): warning : __host__ annotation on a defaulted function("operator=") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat2x4.hpp(81): warning : __device__ annotation on a defaulted function("operator=") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat2x4.hpp(81): warning : __host__ annotation on a defaulted function("operator=") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat2x4.hpp(38): warning : __device__ annotation on a defaulted function("mat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat2x4.hpp(38): warning : __host__ annotation on a defaulted function("mat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat2x4.hpp(39): warning : __device__ annotation on a defaulted function("mat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat2x4.hpp(39): warning : __host__ annotation on a defaulted function("mat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat3x2.hpp(38): warning : __device__ annotation on a defaulted function("mat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat2x4.hpp(81): warning : __device__ annotation on a defaulted function("operator=") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat2x4.hpp(81): warning : __host__ annotation on a defaulted function("operator=") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat3x2.hpp(38): warning : __host__ annotation on a defaulted function("mat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat3x2.hpp(39): warning : __device__ annotation on a defaulted function("mat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat3x2.hpp(39): warning : __host__ annotation on a defaulted function("mat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat3x2.hpp(38): warning : __device__ annotation on a defaulted function("mat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat3x2.hpp(86): warning : __device__ annotation on a defaulted function("operator=") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat3x2.hpp(86): warning : __host__ annotation on a defaulted function("operator=") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat3x2.hpp(38): warning : __host__ annotation on a defaulted function("mat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat3x2.hpp(39): warning : __device__ annotation on a defaulted function("mat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat3x2.hpp(39): warning : __host__ annotation on a defaulted function("mat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat3x2.hpp(86): warning : __device__ annotation on a defaulted function("operator=") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat3x2.hpp(86): warning : __host__ annotation on a defaulted function("operator=") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat3x3.hpp(37): warning : __device__ annotation on a defaulted function("mat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat3x3.hpp(37): warning : __host__ annotation on a defaulted function("mat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat3x3.hpp(38): warning : __device__ annotation on a defaulted function("mat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat3x3.hpp(38): warning : __host__ annotation on a defaulted function("mat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat3x3.hpp(85): warning : __device__ annotation on a defaulted function("operator=") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat3x3.hpp(85): warning : __host__ annotation on a defaulted function("operator=") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat3x3.hpp(37): warning : __device__ annotation on a defaulted function("mat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat3x3.hpp(37): warning : __host__ annotation on a defaulted function("mat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat3x4.hpp(38): warning : __device__ annotation on a defaulted function("mat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat3x4.hpp(38): warning : __host__ annotation on a defaulted function("mat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat3x3.hpp(38): warning : __device__ annotation on a defaulted function("mat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat3x4.hpp(39): warning : __device__ annotation on a defaulted function("mat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat3x4.hpp(39): warning : __host__ annotation on a defaulted function("mat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat3x3.hpp(38): warning : __host__ annotation on a defaulted function("mat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat3x4.hpp(86): warning : __device__ annotation on a defaulted function("operator=") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat3x4.hpp(86): warning : __host__ annotation on a defaulted function("operator=") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat3x3.hpp(85): warning : __device__ annotation on a defaulted function("operator=") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat3x3.hpp(85): warning : __host__ annotation on a defaulted function("operator=") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat4x2.hpp(38): warning : __device__ annotation on a defaulted function("mat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat4x2.hpp(38): warning : __host__ annotation on a defaulted function("mat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat4x2.hpp(39): warning : __device__ annotation on a defaulted function("mat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat4x2.hpp(39): warning : __host__ annotation on a defaulted function("mat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat3x4.hpp(38): warning : __device__ annotation on a defaulted function("mat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat4x2.hpp(91): warning : __device__ annotation on a defaulted function("operator=") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat4x2.hpp(91): warning : __host__ annotation on a defaulted function("operator=") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat3x4.hpp(38): warning : __host__ annotation on a defaulted function("mat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat3x4.hpp(39): warning : __device__ annotation on a defaulted function("mat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat3x4.hpp(39): warning : __host__ annotation on a defaulted function("mat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat4x3.hpp(38): warning : __device__ annotation on a defaulted function("mat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat3x4.hpp(86): warning : __device__ annotation on a defaulted function("operator=") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat4x3.hpp(38): warning : __host__ annotation on a defaulted function("mat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat3x4.hpp(86): warning : __host__ annotation on a defaulted function("operator=") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat4x3.hpp(39): warning : __device__ annotation on a defaulted function("mat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat4x3.hpp(39): warning : __host__ annotation on a defaulted function("mat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat4x3.hpp(91): warning : __device__ annotation on a defaulted function("operator=") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat4x2.hpp(38): warning : __device__ annotation on a defaulted function("mat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat4x2.hpp(38): warning : __host__ annotation on a defaulted function("mat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat4x2.hpp(39): warning : __device__ annotation on a defaulted function("mat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat4x2.hpp(39): warning : __host__ annotation on a defaulted function("mat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat4x3.hpp(91): warning : __host__ annotation on a defaulted function("operator=") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat4x2.hpp(91): warning : __device__ annotation on a defaulted function("operator=") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat4x2.hpp(91): warning : __host__ annotation on a defaulted function("operator=") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat4x4.hpp(37): warning : __device__ annotation on a defaulted function("mat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat4x4.hpp(37): warning : __host__ annotation on a defaulted function("mat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat4x4.hpp(38): warning : __device__ annotation on a defaulted function("mat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat4x4.hpp(38): warning : __host__ annotation on a defaulted function("mat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat4x4.hpp(90): warning : __device__ annotation on a defaulted function("operator=") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat4x4.hpp(90): warning : __host__ annotation on a defaulted function("operator=") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat4x3.hpp(38): warning : __device__ annotation on a defaulted function("mat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat4x3.hpp(38): warning : __host__ annotation on a defaulted function("mat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat4x3.hpp(39): warning : __device__ annotation on a defaulted function("mat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat4x3.hpp(39): warning : __host__ annotation on a defaulted function("mat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat4x3.hpp(91): warning : __device__ annotation on a defaulted function("operator=") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat4x3.hpp(91): warning : __host__ annotation on a defaulted function("operator=") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat4x4.hpp(37): warning : __device__ annotation on a defaulted function("mat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat4x4.hpp(37): warning : __host__ annotation on a defaulted function("mat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat4x4.hpp(38): warning : __device__ annotation on a defaulted function("mat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat4x4.hpp(38): warning : __host__ annotation on a defaulted function("mat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat4x4.hpp(90): warning : __device__ annotation on a defaulted function("operator=") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat4x4.hpp(90): warning : __host__ annotation on a defaulted function("operator=") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail\../ext/vec1.hpp(104): warning : __device__ annotation on a defaulted function("vec") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail\../ext/vec1.hpp(104): warning : __host__ annotation on a defaulted function("vec") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail\../ext/vec1.hpp(105): warning : __device__ annotation on a defaulted function("vec") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail\../ext/vec1.hpp(105): warning : __host__ annotation on a defaulted function("vec") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail\../ext/vec1.hpp(141): warning : __device__ annotation on a defaulted function("operator=") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail\../ext/vec1.hpp(141): warning : __host__ annotation on a defaulted function("operator=") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\gtx\../gtc/quaternion.hpp(80): warning : __device__ annotation on a defaulted function("tquat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\gtx\../gtc/quaternion.hpp(80): warning : __host__ annotation on a defaulted function("tquat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\gtx\../gtc/quaternion.hpp(81): warning : __device__ annotation on a defaulted function("tquat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\gtx\../gtc/quaternion.hpp(81): warning : __host__ annotation on a defaulted function("tquat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\gtx\../gtc/quaternion.hpp(116): warning : __device__ annotation on a defaulted function("operator=") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\gtx\../gtc/quaternion.hpp(116): warning : __host__ annotation on a defaulted function("operator=") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail\../ext/vec1.hpp(104): warning : __device__ annotation on a defaulted function("vec") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail\../ext/vec1.hpp(104): warning : __host__ annotation on a defaulted function("vec") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail\../ext/vec1.hpp(105): warning : __device__ annotation on a defaulted function("vec") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail\../ext/vec1.hpp(105): warning : __host__ annotation on a defaulted function("vec") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail\../ext/vec1.hpp(141): warning : __device__ annotation on a defaulted function("operator=") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail\../ext/vec1.hpp(141): warning : __host__ annotation on a defaulted function("operator=") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\gtx\../gtc/quaternion.hpp(80): warning : __device__ annotation on a defaulted function("tquat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\gtx\../gtc/quaternion.hpp(80): warning : __host__ annotation on a defaulted function("tquat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\gtx\../gtc/quaternion.hpp(81): warning : __device__ annotation on a defaulted function("tquat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\gtx\../gtc/quaternion.hpp(81): warning : __host__ annotation on a defaulted function("tquat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\gtx\../gtc/quaternion.hpp(116): warning : __device__ annotation on a defaulted function("operator=") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\gtx\../gtc/quaternion.hpp(116): warning : __host__ annotation on a defaulted function("operator=") is ignored
+c:\users\acx23\classwork\ee147\final project\final project\GPU_Simple_Particle.cuh(30): warning : declaration requires a typedef name
+  project.cu
+  util.cu
+C:/Users/acx23/Classwork/EE147/Final Project/Final Project/points/points.cu(32): warning : variable "z_d" was declared but never referenced
+C:/Users/acx23/Classwork/EE147/Final Project/Final Project/points/points.cu(36): warning : variable "c2" was set but never used
+  diffusion.cu
   kernel.cu
+  force.cu
+  advection.cu
+  points.cu
+C:/Users/acx23/Classwork/EE147/Final Project/Final Project/projection/project.cu(45): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:/Users/acx23/Classwork/EE147/Final Project/Final Project/diffusion/diffusion.cu(25): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:/Users/acx23/Classwork/EE147/Final Project/Final Project/points/points.cu(83): warning C4018: '<': signed/unsigned mismatch
+C:/Users/acx23/Classwork/EE147/Final Project/Final Project/points/points.cu(85): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:/Users/acx23/Classwork/EE147/Final Project/Final Project/points/points.cu(86): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:/Users/acx23/Classwork/EE147/Final Project/Final Project/points/points.cu(87): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:/Users/acx23/Classwork/EE147/Final Project/Final Project/points/points.cu(88): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:/Users/acx23/Classwork/EE147/Final Project/Final Project/points/points.cu(89): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:/Users/acx23/Classwork/EE147/Final Project/Final Project/points/points.cu(90): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_vec2.hpp(89): warning : __device__ annotation on a defaulted function("vec") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_vec2.hpp(89): warning : __host__ annotation on a defaulted function("vec") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_vec2.hpp(90): warning : __device__ annotation on a defaulted function("vec") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_vec2.hpp(90): warning : __host__ annotation on a defaulted function("vec") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_vec2.hpp(131): warning : __device__ annotation on a defaulted function("operator=") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_vec2.hpp(131): warning : __host__ annotation on a defaulted function("operator=") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_vec3.hpp(89): warning : __device__ annotation on a defaulted function("vec") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_vec3.hpp(89): warning : __host__ annotation on a defaulted function("vec") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_vec3.hpp(90): warning : __device__ annotation on a defaulted function("vec") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_vec3.hpp(90): warning : __host__ annotation on a defaulted function("vec") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_vec3.hpp(152): warning : __device__ annotation on a defaulted function("operator=") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_vec3.hpp(152): warning : __host__ annotation on a defaulted function("operator=") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_vec4.hpp(92): warning : __device__ annotation on a defaulted function("vec") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_vec4.hpp(92): warning : __host__ annotation on a defaulted function("vec") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_vec4.hpp(93): warning : __device__ annotation on a defaulted function("vec") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_vec4.hpp(93): warning : __host__ annotation on a defaulted function("vec") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_vec4.hpp(197): warning : __device__ annotation on a defaulted function("operator=") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_vec4.hpp(197): warning : __host__ annotation on a defaulted function("operator=") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat2x2.hpp(37): warning : __device__ annotation on a defaulted function("mat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat2x2.hpp(37): warning : __host__ annotation on a defaulted function("mat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat2x2.hpp(38): warning : __device__ annotation on a defaulted function("mat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat2x2.hpp(38): warning : __host__ annotation on a defaulted function("mat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat2x2.hpp(78): warning : __device__ annotation on a defaulted function("operator=") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat2x2.hpp(78): warning : __host__ annotation on a defaulted function("operator=") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat2x3.hpp(38): warning : __device__ annotation on a defaulted function("mat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat2x3.hpp(38): warning : __host__ annotation on a defaulted function("mat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat2x3.hpp(39): warning : __device__ annotation on a defaulted function("mat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat2x3.hpp(39): warning : __host__ annotation on a defaulted function("mat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat2x3.hpp(79): warning : __device__ annotation on a defaulted function("operator=") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat2x3.hpp(79): warning : __host__ annotation on a defaulted function("operator=") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat2x4.hpp(38): warning : __device__ annotation on a defaulted function("mat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat2x4.hpp(38): warning : __host__ annotation on a defaulted function("mat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat2x4.hpp(39): warning : __device__ annotation on a defaulted function("mat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat2x4.hpp(39): warning : __host__ annotation on a defaulted function("mat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat2x4.hpp(81): warning : __device__ annotation on a defaulted function("operator=") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat2x4.hpp(81): warning : __host__ annotation on a defaulted function("operator=") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat3x2.hpp(38): warning : __device__ annotation on a defaulted function("mat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat3x2.hpp(38): warning : __host__ annotation on a defaulted function("mat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat3x2.hpp(39): warning : __device__ annotation on a defaulted function("mat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat3x2.hpp(39): warning : __host__ annotation on a defaulted function("mat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat3x2.hpp(86): warning : __device__ annotation on a defaulted function("operator=") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat3x2.hpp(86): warning : __host__ annotation on a defaulted function("operator=") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat3x3.hpp(37): warning : __device__ annotation on a defaulted function("mat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat3x3.hpp(37): warning : __host__ annotation on a defaulted function("mat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat3x3.hpp(38): warning : __device__ annotation on a defaulted function("mat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat3x3.hpp(38): warning : __host__ annotation on a defaulted function("mat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat3x3.hpp(85): warning : __device__ annotation on a defaulted function("operator=") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat3x3.hpp(85): warning : __host__ annotation on a defaulted function("operator=") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat3x4.hpp(38): warning : __device__ annotation on a defaulted function("mat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat3x4.hpp(38): warning : __host__ annotation on a defaulted function("mat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat3x4.hpp(39): warning : __device__ annotation on a defaulted function("mat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat3x4.hpp(39): warning : __host__ annotation on a defaulted function("mat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat3x4.hpp(86): warning : __device__ annotation on a defaulted function("operator=") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat3x4.hpp(86): warning : __host__ annotation on a defaulted function("operator=") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat4x2.hpp(38): warning : __device__ annotation on a defaulted function("mat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat4x2.hpp(38): warning : __host__ annotation on a defaulted function("mat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat4x2.hpp(39): warning : __device__ annotation on a defaulted function("mat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat4x2.hpp(39): warning : __host__ annotation on a defaulted function("mat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat4x2.hpp(91): warning : __device__ annotation on a defaulted function("operator=") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat4x2.hpp(91): warning : __host__ annotation on a defaulted function("operator=") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat4x3.hpp(38): warning : __device__ annotation on a defaulted function("mat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat4x3.hpp(38): warning : __host__ annotation on a defaulted function("mat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat4x3.hpp(39): warning : __device__ annotation on a defaulted function("mat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat4x3.hpp(39): warning : __host__ annotation on a defaulted function("mat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat4x3.hpp(91): warning : __device__ annotation on a defaulted function("operator=") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat4x3.hpp(91): warning : __host__ annotation on a defaulted function("operator=") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat4x4.hpp(37): warning : __device__ annotation on a defaulted function("mat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat4x4.hpp(37): warning : __host__ annotation on a defaulted function("mat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat4x4.hpp(38): warning : __device__ annotation on a defaulted function("mat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat4x4.hpp(38): warning : __host__ annotation on a defaulted function("mat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat4x4.hpp(90): warning : __device__ annotation on a defaulted function("operator=") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat4x4.hpp(90): warning : __host__ annotation on a defaulted function("operator=") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail\../ext/vec1.hpp(104): warning : __device__ annotation on a defaulted function("vec") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail\../ext/vec1.hpp(104): warning : __host__ annotation on a defaulted function("vec") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail\../ext/vec1.hpp(105): warning : __device__ annotation on a defaulted function("vec") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail\../ext/vec1.hpp(105): warning : __host__ annotation on a defaulted function("vec") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail\../ext/vec1.hpp(141): warning : __device__ annotation on a defaulted function("operator=") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail\../ext/vec1.hpp(141): warning : __host__ annotation on a defaulted function("operator=") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\gtx\../gtc/quaternion.hpp(80): warning : __device__ annotation on a defaulted function("tquat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\gtx\../gtc/quaternion.hpp(80): warning : __host__ annotation on a defaulted function("tquat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\gtx\../gtc/quaternion.hpp(81): warning : __device__ annotation on a defaulted function("tquat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\gtx\../gtc/quaternion.hpp(81): warning : __host__ annotation on a defaulted function("tquat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\gtx\../gtc/quaternion.hpp(116): warning : __device__ annotation on a defaulted function("operator=") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\gtx\../gtc/quaternion.hpp(116): warning : __host__ annotation on a defaulted function("operator=") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_vec2.hpp(89): warning : __device__ annotation on a defaulted function("vec") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_vec2.hpp(89): warning : __host__ annotation on a defaulted function("vec") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_vec2.hpp(90): warning : __device__ annotation on a defaulted function("vec") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_vec2.hpp(90): warning : __host__ annotation on a defaulted function("vec") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_vec2.hpp(131): warning : __device__ annotation on a defaulted function("operator=") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_vec2.hpp(131): warning : __host__ annotation on a defaulted function("operator=") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_vec3.hpp(89): warning : __device__ annotation on a defaulted function("vec") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_vec3.hpp(89): warning : __host__ annotation on a defaulted function("vec") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_vec3.hpp(90): warning : __device__ annotation on a defaulted function("vec") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_vec3.hpp(90): warning : __host__ annotation on a defaulted function("vec") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_vec3.hpp(152): warning : __device__ annotation on a defaulted function("operator=") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_vec3.hpp(152): warning : __host__ annotation on a defaulted function("operator=") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_vec4.hpp(92): warning : __device__ annotation on a defaulted function("vec") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_vec4.hpp(92): warning : __host__ annotation on a defaulted function("vec") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_vec4.hpp(93): warning : __device__ annotation on a defaulted function("vec") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_vec4.hpp(93): warning : __host__ annotation on a defaulted function("vec") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_vec4.hpp(197): warning : __device__ annotation on a defaulted function("operator=") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_vec4.hpp(197): warning : __host__ annotation on a defaulted function("operator=") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat2x2.hpp(37): warning : __device__ annotation on a defaulted function("mat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat2x2.hpp(37): warning : __host__ annotation on a defaulted function("mat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat2x2.hpp(38): warning : __device__ annotation on a defaulted function("mat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat2x2.hpp(38): warning : __host__ annotation on a defaulted function("mat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat2x2.hpp(78): warning : __device__ annotation on a defaulted function("operator=") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat2x2.hpp(78): warning : __host__ annotation on a defaulted function("operator=") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat2x3.hpp(38): warning : __device__ annotation on a defaulted function("mat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat2x3.hpp(38): warning : __host__ annotation on a defaulted function("mat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat2x3.hpp(39): warning : __device__ annotation on a defaulted function("mat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat2x3.hpp(39): warning : __host__ annotation on a defaulted function("mat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat2x3.hpp(79): warning : __device__ annotation on a defaulted function("operator=") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat2x3.hpp(79): warning : __host__ annotation on a defaulted function("operator=") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat2x4.hpp(38): warning : __device__ annotation on a defaulted function("mat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat2x4.hpp(38): warning : __host__ annotation on a defaulted function("mat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat2x4.hpp(39): warning : __device__ annotation on a defaulted function("mat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat2x4.hpp(39): warning : __host__ annotation on a defaulted function("mat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat2x4.hpp(81): warning : __device__ annotation on a defaulted function("operator=") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat2x4.hpp(81): warning : __host__ annotation on a defaulted function("operator=") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat3x2.hpp(38): warning : __device__ annotation on a defaulted function("mat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat3x2.hpp(38): warning : __host__ annotation on a defaulted function("mat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat3x2.hpp(39): warning : __device__ annotation on a defaulted function("mat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat3x2.hpp(39): warning : __host__ annotation on a defaulted function("mat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat3x2.hpp(86): warning : __device__ annotation on a defaulted function("operator=") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat3x2.hpp(86): warning : __host__ annotation on a defaulted function("operator=") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat3x3.hpp(37): warning : __device__ annotation on a defaulted function("mat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat3x3.hpp(37): warning : __host__ annotation on a defaulted function("mat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat3x3.hpp(38): warning : __device__ annotation on a defaulted function("mat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat3x3.hpp(38): warning : __host__ annotation on a defaulted function("mat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat3x3.hpp(85): warning : __device__ annotation on a defaulted function("operator=") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat3x3.hpp(85): warning : __host__ annotation on a defaulted function("operator=") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat3x4.hpp(38): warning : __device__ annotation on a defaulted function("mat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat3x4.hpp(38): warning : __host__ annotation on a defaulted function("mat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat3x4.hpp(39): warning : __device__ annotation on a defaulted function("mat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat3x4.hpp(39): warning : __host__ annotation on a defaulted function("mat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat3x4.hpp(86): warning : __device__ annotation on a defaulted function("operator=") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat3x4.hpp(86): warning : __host__ annotation on a defaulted function("operator=") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat4x2.hpp(38): warning : __device__ annotation on a defaulted function("mat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat4x2.hpp(38): warning : __host__ annotation on a defaulted function("mat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat4x2.hpp(39): warning : __device__ annotation on a defaulted function("mat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat4x2.hpp(39): warning : __host__ annotation on a defaulted function("mat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat4x2.hpp(91): warning : __device__ annotation on a defaulted function("operator=") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat4x2.hpp(91): warning : __host__ annotation on a defaulted function("operator=") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat4x3.hpp(38): warning : __device__ annotation on a defaulted function("mat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat4x3.hpp(38): warning : __host__ annotation on a defaulted function("mat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat4x3.hpp(39): warning : __device__ annotation on a defaulted function("mat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat4x3.hpp(39): warning : __host__ annotation on a defaulted function("mat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat4x3.hpp(91): warning : __device__ annotation on a defaulted function("operator=") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat4x3.hpp(91): warning : __host__ annotation on a defaulted function("operator=") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat4x4.hpp(37): warning : __device__ annotation on a defaulted function("mat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat4x4.hpp(37): warning : __host__ annotation on a defaulted function("mat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat4x4.hpp(38): warning : __device__ annotation on a defaulted function("mat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat4x4.hpp(38): warning : __host__ annotation on a defaulted function("mat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat4x4.hpp(90): warning : __device__ annotation on a defaulted function("operator=") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail/type_mat4x4.hpp(90): warning : __host__ annotation on a defaulted function("operator=") is ignored
+  GPU_Particle.cu
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail\../ext/vec1.hpp(104): warning : __device__ annotation on a defaulted function("vec") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail\../ext/vec1.hpp(104): warning : __host__ annotation on a defaulted function("vec") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail\../ext/vec1.hpp(105): warning : __device__ annotation on a defaulted function("vec") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail\../ext/vec1.hpp(105): warning : __host__ annotation on a defaulted function("vec") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail\../ext/vec1.hpp(141): warning : __device__ annotation on a defaulted function("operator=") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\detail\../ext/vec1.hpp(141): warning : __host__ annotation on a defaulted function("operator=") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\gtx\../gtc/quaternion.hpp(80): warning : __device__ annotation on a defaulted function("tquat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\gtx\../gtc/quaternion.hpp(80): warning : __host__ annotation on a defaulted function("tquat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\gtx\../gtc/quaternion.hpp(81): warning : __device__ annotation on a defaulted function("tquat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\gtx\../gtc/quaternion.hpp(81): warning : __host__ annotation on a defaulted function("tquat") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\gtx\../gtc/quaternion.hpp(116): warning : __device__ annotation on a defaulted function("operator=") is ignored
+c:\users\acx23\classwork\ee147\final project\deps\glm\glm\gtx\../gtc/quaternion.hpp(116): warning : __host__ annotation on a defaulted function("operator=") is ignored
+c:\users\acx23\classwork\ee147\final project\final project\GPU_Simple_Particle.cuh(30): warning : declaration requires a typedef name
+  GPU_Simple_Particle.cu
+C:/Users/acx23/Classwork/EE147/Final Project/Final Project/GPU_Particle.cu(24): warning C4305: '=': truncation from 'double' to 'float'
+C:/Users/acx23/Classwork/EE147/Final Project/Final Project/GPU_Particle.cu(133): warning C4305: '=': truncation from 'double' to 'GLfloat'
+  GPU_Setup.cu
+  Main.cpp
+c:\users\acx23\classwork\ee147\final project\final project\main.cpp(97): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\acx23\classwork\ee147\final project\final project\main.cpp(98): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+  Generating Code...
+  Compiling...
+  CPU_Particle.cpp
+  Generating Code...
   Final Project.vcxproj -> C:\Users\acx23\Classwork\EE147\Final Project\x64\Debug\Final Project.exe
   Final Project.vcxproj -> C:\Users\acx23\Classwork\EE147\Final Project\x64\Debug\Final Project.pdb (Full PDB)
   copy "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.1\bin\cudart*.dll" "C:\Users\acx23\Classwork\EE147\Final Project\x64\Debug\"

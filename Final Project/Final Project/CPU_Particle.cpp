@@ -2,6 +2,11 @@
 
 #include "Helper.h"
 #include "Texture.h"
+
+// Code based on:
+// http://www.opengl-tutorial.org/
+// https://learnopengl.com/
+
 CPU_Particle::CPU_Particle()
 {
 
@@ -14,8 +19,6 @@ CPU_Particle::~CPU_Particle()
 
 void CPU_Particle::init()
 {
-
-
 	glGenVertexArrays(1, &VertexArrayID);
 	glBindVertexArray(VertexArrayID);
 
@@ -85,7 +88,7 @@ void CPU_Particle::SortParticles() {
 	std::sort(&ParticlesContainer[0], &ParticlesContainer[MaxParticles]);
 }
 
-void CPU_Particle::render(float delta, glm::vec3 CameraPosition, glm::mat4 ViewProjectionMatrix, glm::mat4 ViewMatrix)
+void CPU_Particle::simulate(float delta, glm::vec3 CameraPosition)
 {
 	// Generate 10 new particule each millisecond,
 	// but limit this to 16 ms (60 fps), or if you have 1 long frame (1sec),
@@ -126,7 +129,7 @@ void CPU_Particle::render(float delta, glm::vec3 CameraPosition, glm::mat4 ViewP
 
 
 	// Simulate all particles
-	int ParticlesCount = 0;
+	ParticlesCount = 0;
 	for (int i = 0; i < MaxParticles; i++) {
 
 		Particle& p = ParticlesContainer[i]; // shortcut
@@ -167,9 +170,10 @@ void CPU_Particle::render(float delta, glm::vec3 CameraPosition, glm::mat4 ViewP
 	}
 
 	SortParticles();
+}
 
-
-
+void CPU_Particle::render(float delta, glm::vec3 CameraPosition, glm::mat4 ViewProjectionMatrix, glm::mat4 ViewMatrix)
+{
 	// Update the buffers that OpenGL uses for rendering.
 	// There are much more sophisticated means to stream data from the CPU to the GPU, 
 	// but this is outside the scope of this tutorial.

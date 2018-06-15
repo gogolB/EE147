@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CudaCompile Include="kernel.cu" />
+    <CudaCompile Include="advection\advection.cu">
+      <Filter>Advection</Filter>
+    </CudaCompile>
+    <CudaCompile Include="GPU_Setup.cu">
+      <Filter>OpenGL</Filter>
+    </CudaCompile>
+    <CudaCompile Include="diffusion\diffusion.cu">
+      <Filter>Diffusion</Filter>
+    </CudaCompile>
+    <CudaCompile Include="force\force.cu">
+      <Filter>Force</Filter>
+    </CudaCompile>
+    <CudaCompile Include="points\points.cu">
+      <Filter>Points</Filter>
+    </CudaCompile>
+    <CudaCompile Include="projection\project.cu">
+      <Filter>Projection</Filter>
+    </CudaCompile>
+    <CudaCompile Include="util.cu">
+      <Filter>GPU_Particle</Filter>
+    </CudaCompile>
+    <CudaCompile Include="GPU_Particle.cu">
+      <Filter>GPU_Particle</Filter>
+    </CudaCompile>
+    <CudaCompile Include="GPU_Simple_Particle.cu">
+      <Filter>GPU_Particle</Filter>
+    </CudaCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Controls.cpp">
+      <Filter>OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="CPU_Particle.cpp">
+      <Filter>OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="Helper.cpp">
+      <Filter>OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="Texture.cpp">
+      <Filter>OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="Window_Control.cpp">
+      <Filter>OpenGL</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="advection\advection.h">
+      <Filter>Advection</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls.h">
+      <Filter>OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="CPU_Particle.h">
+      <Filter>OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="GPU_Setup.h">
+      <Filter>OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="Helper.h">
+      <Filter>OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="Texture.h">
+      <Filter>OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="Window_Control.h">
+      <Filter>OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="diffusion\diffusion.h">
+      <Filter>Diffusion</Filter>
+    </ClInclude>
+    <ClInclude Include="force\force.h">
+      <Filter>Force</Filter>
+    </ClInclude>
+    <ClInclude Include="points\points.h">
+      <Filter>Points</Filter>
+    </ClInclude>
+    <ClInclude Include="projection\project.h">
+      <Filter>Projection</Filter>
+    </ClInclude>
+    <ClInclude Include="util.h">
+      <Filter>GPU_Particle</Filter>
+    </ClInclude>
+    <ClInclude Include="GPU_Particle.cuh">
+      <Filter>GPU_Particle</Filter>
+    </ClInclude>
+    <ClInclude Include="GPU_Simple_Particle.cuh">
+      <Filter>GPU_Particle</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Advection">
+      <UniqueIdentifier>{f566a790-8694-49c3-8f8a-7883b5255936}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="OpenGL">
+      <UniqueIdentifier>{b96884c6-a679-4506-9c5b-664e1b7c307b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Diffusion">
+      <UniqueIdentifier>{14e2e07e-ac8e-4d33-9e5d-5b14fc0f799b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Force">
+      <UniqueIdentifier>{c51881c8-29ab-466e-944c-24609f6e9e6b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Points">
+      <UniqueIdentifier>{2e76abc5-78fd-475f-9aa8-17af268228ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Projection">
+      <UniqueIdentifier>{a2a8e7c0-261d-4743-b9c3-79d5b81c7118}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GPU_Particle">
+      <UniqueIdentifier>{524f5a87-d47b-41cb-ab77-ebd850ee567a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

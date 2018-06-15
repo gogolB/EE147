@@ -4,8 +4,8 @@ AdditionalCompilerOptions=
 AdditionalDependencies=
 AdditionalDeps=
 AdditionalLibraryDirectories=
-AdditionalOptions=
-AdditionalOptions=
+AdditionalOptions=-arch=compute_30 
+AdditionalOptions=-arch=compute_30 
 CodeGeneration=compute_30,sm_30
 CodeGeneration=compute_30,sm_30
 CompileOut=x64\Debug\kernel.cu.obj
@@ -19,7 +19,7 @@ GenerateRelocatableDeviceCode=false
 GPUDebugInfo=true
 GPUDebugInfo=true
 HostDebugInfo=true
-Include=;;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.1\include
+Include=C:\Users\acx23\Classwork\EE147\Final Project\deps\glew-2.1.0\include;C:\Users\acx23\Classwork\EE147\Final Project\deps\glfw-3.2.1\include;C:\Users\acx23\Classwork\EE147\Final Project\deps\glm;;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.1\include
 Inputs=
 InterleaveSourceInPTX=false
 Keep=false

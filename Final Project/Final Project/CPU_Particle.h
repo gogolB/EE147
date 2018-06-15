@@ -56,6 +56,7 @@ private:
 	GLuint particles_color_buffer;
 
 	static const int MaxParticles = 100000;
+	int ParticlesCount = 0;
 	Particle ParticlesContainer[MaxParticles];
 	int LastUsedParticle = 0;
 public:
@@ -66,7 +67,7 @@ public:
 	void init();
 	int FindUnusedParticle();
 	void SortParticles();
-
+	void simulate(float delta, glm::vec3 CameraPosition);
 	void render(float delta, glm::vec3 CameraPosition, glm::mat4 ViewProjectionMatrix, glm::mat4 ViewMatrix);
 
 	void cleanup();

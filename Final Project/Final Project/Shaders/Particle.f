@@ -1,5 +1,9 @@
 #version 330 core
 
+// Code based on: 
+// http://www.opengl-tutorial.org/
+// https://learnopengl.com/
+
 // Interpolated values from the vertex shaders
 in vec2 UV;
 in vec4 particlecolor;
