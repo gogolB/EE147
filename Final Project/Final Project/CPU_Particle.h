@@ -1,5 +1,7 @@
 #pragma once
-
+// Code based on:
+// http://www.opengl-tutorial.org/
+// https://learnopengl.com/
 #define GLM_ENABLE_EXPERIMENTAL
 
 // Include GLEW. Always include it before gl.h and glfw3.h, since it's a bit magic.
@@ -55,7 +57,7 @@ private:
 
 	GLuint particles_color_buffer;
 
-	static const int MaxParticles = 100000;
+	static const int MaxParticles = 10000000;
 	int ParticlesCount = 0;
 	Particle ParticlesContainer[MaxParticles];
 	int LastUsedParticle = 0;

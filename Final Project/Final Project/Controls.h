@@ -1,4 +1,7 @@
 #pragma once
+// Code based on:
+// http://www.opengl-tutorial.org/
+// https://learnopengl.com/
 
 #include<glm\glm.hpp>
 

@@ -1,6 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+// Code based on:
+// http://www.opengl-tutorial.org/
+// https://learnopengl.com/
+
 #define GLM_ENABLE_EXPERIMENTAL
 #define LATTICE_SIZE 0.01
 #define DELTA_T 0.0167

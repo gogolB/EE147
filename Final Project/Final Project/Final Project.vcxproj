@@ -192,7 +192,6 @@ copy "$(CudaToolkitBinDir)\cudart*.dll" "$(OutDir)"</Command>
     <CudaCompile Include="GPU_Particle.cu" />
     <CudaCompile Include="GPU_Setup.cu" />
     <CudaCompile Include="GPU_Simple_Particle.cu" />
-    <CudaCompile Include="kernel.cu" />
     <CudaCompile Include="points\points.cu" />
     <CudaCompile Include="projection\project.cu" />
     <CudaCompile Include="util.cu" />

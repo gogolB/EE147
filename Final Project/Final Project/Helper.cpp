@@ -1,5 +1,8 @@
 #include "Helper.h"
 
+// Code based on:
+// http://www.opengl-tutorial.org/
+// https://learnopengl.com/
 
 #include <stdio.h>
 #include <string>

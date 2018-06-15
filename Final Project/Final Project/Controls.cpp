@@ -1,7 +1,9 @@
 #include <GLFW/glfw3.h>
-extern GLFWwindow* window; // The "extern" keyword here is to access the variable "window" declared in tutorialXXX.cpp. This is a hack to keep the tutorials simple. Please avoid this.
+// Code based on:
+// http://www.opengl-tutorial.org/
+// https://learnopengl.com/
 
-						   // Include GLM
+extern GLFWwindow* window; 
 #include <glm/glm.hpp>
 #include <glm/gtc/matrix_transform.hpp>
 using namespace glm;
@@ -87,8 +89,7 @@ void computeMatricesFromInputs() {
 		position -= right * deltaTime * speed;
 	}
 
-	float FoV = initialFoV;// - 5 * glfwGetMouseWheel(); // Now GLFW 3 requires setting up a callback for this. It's a bit too complicated for this beginner's tutorial, so it's disabled instead.
-
+	float FoV = initialFoV;
 						   // Projection matrix : 45° Field of View, 4:3 ratio, display range : 0.1 unit <-> 100 units
 	ProjectionMatrix = glm::perspective(glm::radians(FoV), 4.0f / 3.0f, 0.1f, 100.0f);
 	// Camera matrix

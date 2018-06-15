@@ -1,4 +1,8 @@
 #pragma once
+// Code based on:
+// http://www.opengl-tutorial.org/
+// https://learnopengl.com/
+
 // Include GLEW. Always include it before gl.h and glfw3.h, since it's a bit magic.
 #include <GL/glew.h>
 
